@@ -191,7 +191,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "DSedition",
             language: "english",
             chatLink: "https://rawgit.com/dragonkids/basicBot/master/lang/en.json",
             startupCap: 10, // 1-200
