@@ -193,7 +193,7 @@
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/dragonkids/basicBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             startupCap: 10, // 1-200
             startupVolume: 10, // 0-100
             startupEmoji: true, // true or false
