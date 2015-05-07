@@ -343,7 +343,7 @@
                     API.sendChat(basicBot.chat.isopen);
                 },
                 endRoulette: function () {
-                    basicBot.room.roulette.rouletteStatus = false;
+                    basicBot.room.roulette.rouletteStatus = true;
                     var ind = Math.floor(Math.random() * basicBot.room.roulette.participants.length);
                     var winner = basicBot.room.roulette.participants[ind];
                     basicBot.room.roulette.participants = [];
@@ -352,7 +352,7 @@
                     var name = user.username;
                     API.sendChat(subChat(basicBot.chat.winnerpicked, {name: name, position: pos}));
                     setTimeout(function (winner, pos) {
-                        basicBot.userUtilities.moveUser(winner, pos, false);
+                        basicBot.userUtilities.moveUser(winner, pos, true);
                     }, 1 * 1000, winner, pos);
                 }
             }
@@ -1001,16 +1001,16 @@
                 ch = msg.charAt(i);
                 if (ch >= 'A' && ch <= 'Z') capitals++;
             }
-            if (capitals >= 40) {
+            if (capitals >= 10) {
                 API.sendChat(subChat(basicBot.chat.caps, {name: chat.un}));
                 return true;
             }
             msg = msg.toLowerCase();
-            if (msg === 'skip') {
+            if (msg === 'skip, menjaj, prebaci, skipuj, next') {
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
                 return true;
             }
-            for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
+            for (var j = 5; j < basicBot.chatUtilities.spam.length; j++) {
                 if (msg === basicBot.chatUtilities.spam[j]) {
                     API.sendChat(subChat(basicBot.chat.spam, {name: chat.un}));
                     return true;
@@ -2006,7 +2006,7 @@
             },
 
             ghostbusterCommand: {
-                command: 'ghostbuster',
+                command: 'ghost',
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
