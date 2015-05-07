@@ -1006,7 +1006,7 @@
                 return true;
             }
             msg = msg.toLowerCase();
-            if (msg === 'skip, menjaj, prebaci, skipuj, next') {
+            if (msg === 'skip') {
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
                 return true;
             }
@@ -1042,7 +1042,7 @@
                     return true;
                 }
                 /**
-                 var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                 var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
