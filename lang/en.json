@@ -4,7 +4,7 @@
     "retrievingdata": "No previous data found.",
     "datarestored": "Ranije pronadjeni podatci se uspjesno ucitavaju.",
     "greyuser": "Samo bouncer ili veci rank moze da pokrene bota.",
-    "bouncer": "The bot can't move people when it's run as a bouncer.",
+    "bouncer": "Bota je pokrenuo bouncer tako da ne moze da premesta.",
     "online": "/me DSedition bot je dostupan :yum: :white_check_mark:) !",
 
 
@@ -17,7 +17,7 @@
 
 
     "isopen": "/me @everyone rulet je pokrenut! pisite !join da se pridruzite!",
-    "winnerpicked": "/me Pobjednik je odabran! @%%NAME%% na poziciju %%POSITION%%.",
+    "winnerpicked": "/me Pobjednik je odabran! @%%NAME%% na poziciju %%POSITION%%. ",
 
     "ball": "/me %%NAME%% pitanje je: \"%%QUESTION%%\" moj odgovor je: \"%%RESPONSE%%\"",
 
@@ -62,8 +62,8 @@
     "invalidlimitspecified": "/me [@%%NAME%%] Invalid limit.",
     "invalidpositionspecified": "/me [@%%NAME%%] Invalid position specified.",
     "whois": "/me [%%NAME1%%] Username: %%NAME2%%, ID: %%ID%%, Rank: %%RANK%%, Joined: %%JOINED%%, Level: %%LEVEL%%, Language: %%LANGUAGE%%, Avatar: %%AVATAR%%, Status: %%STATUS%%%%PROFILE%%",
-    "toggleon": "/me [@%%NAME%%] %%FUNCTION%% dostupna.",
-    "toggleoff": "/me [@%%NAME%%] %%FUNCTION%% nedostupna.",
+    "toggleon": "/me [@%%NAME%%] %%FUNCTION%% dostupan.",
+    "toggleoff": "/me [@%%NAME%%] %%FUNCTION%% nedostupan.",
     "cmddeletion": "komanda obrisana",
     "afkremoval": "AFK uklanjanje",
     "afksremoved": "AFK uklonjen",
