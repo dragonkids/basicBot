@@ -233,7 +233,7 @@
             "Bez sumlje.",
             "To ko te nagovorio da pitas je budala.",
             "That ass!!!",
-            "Sili ciku?",
+            "Bili ciku?",
             "Saberi se pa pitaj..ako ti odgovorim oduzeces se.",
             "Ne izgleda dobro.",
             "MOLIM?!.",
