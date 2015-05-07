@@ -2214,7 +2214,7 @@
             },
 
             killCommand: {
-                command: 'gasi',
+                command: 'ugasi',
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
