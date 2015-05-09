@@ -226,6 +226,9 @@
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
                 ["unavailable", "The song you played was not available for some users. "]
             ],
+            chat: [
+            "Da li si ikada razmisljao koliko si glup?"
+            ],
             ball: [
             "Smaras.",
             "Da.",
@@ -1587,6 +1590,25 @@
                             var randomBall = Math.floor(Math.random() * basicBot.settings.ball.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             API.sendChat(subChat(basicBot.chat.ball, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.settings.ball[randomBall]}));
+                     }
+                }
+            },
+
+  ChatCommand: {
+                command: ['chat'],
+                rank: 'user',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                            var crowd = API.getUsers();
+                            var msg = chat.message;
+                            var argument = msg.substring(cmd.length + 1);
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomChat = Math.floor(Math.random() * basicBot.settings.chat.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            API.sendChat(subChat(basicBot.chat.chat, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.settings.chat[randomChat]}));
                      }
                 }
             },
