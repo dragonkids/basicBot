@@ -21,7 +21,7 @@
 
     "ball": "/me %%NAME%% pitanje je: \"%%QUESTION%%\" moj odgovor je: \"%%RESPONSE%%\"",
     "chat": "/me %%NAME%% \"%%RESPONSE%%\"",
-    "cit": "/me %%NAME%% \"%%RESPONSE%%\",
+    "cit": "/me %%NAME%% \"%%RESPONSE%%\"",
 
     "notghosting": "[%%NAME1%%] %%NAME2%% nije ubagovao :) .",
     "ghosting": "[%%NAME1%%] %%NAME2%% je ubagovao ili nije ovde :eyes: .",
