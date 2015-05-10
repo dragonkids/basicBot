@@ -180,7 +180,7 @@
 
     var basicBot = {
         version: "2.3.4",
-        status: false,
+        status: true,
         name: "basicBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/dragonkids/basicBot/master/basicBot.js",
@@ -208,8 +208,8 @@
             maximumLocktime: 10,
             cycleGuard: true,
             maximumCycletime: 10,
-            voteSkip: false,
-            voteSkipLimit: 10,
+            voteSkip: true,
+            voteSkipLimit: 5,
             historySkip: false,
             timeGuard: true,
             maximumSongLength: 10,
@@ -226,8 +226,12 @@
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
                 ["unavailable", "The song you played was not available for some users. "]
             ],
+            cit: [
+            "Kocka je bačena"
+            ]
             chat: [
-            "Da li si ikada razmisljao koliko si glup?"
+            "Da li si ikada razmisljao koliko si glup?",
+            "Pazi vako, ja sam bot i svi me smaraju jel bas i ti moras?"
             ],
             ball: [
             "Smaras.",
@@ -1609,6 +1613,25 @@
                             var randomChat = Math.floor(Math.random() * basicBot.settings.chat.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             API.sendChat(subChat(basicBot.chat.chat, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.settings.chat[randomChat]}));
+                     }
+                }
+            },
+
+ CitCommand: {
+                command: ['citat'],
+                rank: 'user',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                            var crowd = API.getUsers();
+                            var msg = chat.message;
+                            var argument = msg.substring(cmd.length + 1);
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomCit = Math.floor(Math.random() * basicBot.settings.cit.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            API.sendChat(subChat(basicBot.chat.cit, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.settings.cit[randomCit]}));
                      }
                 }
             },
