@@ -228,7 +228,7 @@
             ],
             cit: [
             "Kocka je bačena"
-            ]
+            ],
             chat: [
             "Da li si ikada razmisljao koliko si glup?",
             "Pazi vako, ja sam bot i svi me smaraju jel bas i ti moras?"
