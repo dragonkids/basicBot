@@ -287,7 +287,7 @@
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: true,
+            rulesLink: www.google.ba,
             themeLink: null,
             fbLink: true,
             youtubeLink: true,
