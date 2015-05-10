@@ -287,6 +287,7 @@
             etaRestriction: false,
             welcome: true,
             opLink: null,
+            haha: !add @DrAgoNN_boY
             rulesLink: true,
             themeLink: null,
             fbLink: true,
@@ -2270,7 +2271,7 @@
             },
 
             killCommand: {
-                command: 'ugasi',
+                command: 'turnoff',
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2551,6 +2552,19 @@
                 }
             },
 
+            hahaCommand: {
+                 command: 'haha',
+                 rank: 'user', 
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof basicBot.settings.haha === "string")
+                            return API.sendChat(subChat(basicBot.chat.roomrules, {link: basicBot.settings.haha}));
+                    }
+                }
+            },   
             moveCommand: {
                 command: 'move',
                 rank: 'mod',
