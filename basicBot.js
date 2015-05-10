@@ -1068,10 +1068,7 @@
                     }
                 }
                  **/
-                if (msg.indexOf("volim te") !== -1){
-                    var LOVEMsg = [ ":heart: ];
-                    api.sendChat (LOVEMsg);
-                }
+              
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
