@@ -287,10 +287,10 @@
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: null,
+            rulesLink: true,
             themeLink: null,
-            fbLink: null,
-            youtubeLink: null,
+            fbLink: true,
+            youtubeLink: true,
             website: null,
             intervalMessages: [],
             messageInterval: 5,
@@ -3421,7 +3421,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        if (typeof basicBot.settings.youtubeLink === "string")
+                        if (typeof basicBot.settings.youtubeLink === "www.youtube.com")
                             API.sendChat(subChat(basicBot.chat.youtube, {name: chat.un, link: basicBot.settings.youtubeLink}));
                     }
                 }
