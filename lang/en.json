@@ -137,8 +137,8 @@
     "pong": "/me Pong!",
     "reload": "/me Odmah se vracam ;) .",
     "removenotinwl": "/me [@%%NAME%%] Specified user @%%USERNAME%% is not in the waitlist.",
-    "haha": "/me !add @DrAgoNN_boY
     "roomrules": "/me Procitaj pravila :warning: : %%LINK%%",
+    "haha": "/me !add @DrAgoNN_boY"
     "sessionstats": "/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
     "skip": "/me [%%NAME%% used skip.]",
     "madeby": "/me This bot was made by %%NAME%%.",
