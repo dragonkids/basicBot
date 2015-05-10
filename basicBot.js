@@ -227,7 +227,14 @@
                 ["unavailable", "The song you played was not available for some users. "]
             ],
             cit: [
-            "Kocka je bačena"
+            "Kocka je bačena (Gaj Julije Cezar)",
+            "Troje može čuvati tajnu samo ako je dvoje od njih mrtvo.",
+            "Nisu loša vremena, nego čovek (Darvin)", 
+            "Vaša mržnja, pretvorena u električnu energiju,mogla bi osvjetljavati gradove i gradove. (Nikola Tesla)",
+            "29 posljednjih dana u mjesecu je najteže. (Nikola Tesla)",
+            "Korijeni učenja su gorki, ali plodovi su slatki. (Aristotel)",
+            "Ab Iove principium. – Početak je od Jupitera. (Gaj Julije Cezar)",
+            "Acta, non verba. - Djela, ne riječi. (Gaj Julije Cezar)",
             ],
             chat: [
             "Da li si ikada razmisljao koliko si glup?",
