@@ -2714,7 +2714,7 @@
             },
 
             refreshCommand: {
-                command: 'refresh',
+                command: 'osvezi',
                 rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
