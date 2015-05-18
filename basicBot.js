@@ -2527,7 +2527,7 @@
             },
 
             motdCommand: {
-                command: 'motd',
+                command: 'motd1',
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
