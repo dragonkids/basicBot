@@ -1,7 +1,7 @@
 {
     "room": "My test room",
     "author": "-DONT_STOP-",
-    "css": https://rawgit.com/donvoo/nc/nc/rcs.css,
+    "css": "https://rawgit.com/donvoo/nc/nc/rcs.css",
     "rules": {
         "allowAutorespond": true,
         "allowAutowoot": true,
@@ -13,9 +13,9 @@
         "forceSmartVote": false
     },
     "ccc": {
-        "admin": #42A5DC,
-        "ambassador": #84B423,
-        "host": #F3508F,
+        "admin": "#42A5DC",
+        "ambassador": "#84B423",
+        "host": "#F3508F",
         "cohost": null,
         "manager": null,
         "bouncer": null,
@@ -25,7 +25,7 @@
         "user": null
     },
     "images": {
-        "background": http://prntscr.com/7qvloh,
+        "background": "http://prntscr.com/7qvloh",
         "playback": null,
         "admin": null,
         "ambassador": null,
