@@ -16,7 +16,7 @@
         "admin": "#42A5DC",
         "ambassador": "#84B423",
         "host": "#F3508F",
-        "cohost": null,
+        "cohost": "#5ef350",
         "manager": null,
         "bouncer": null,
         "rdj": null,
@@ -25,7 +25,7 @@
         "user": null
     },
     "images": {
-        "background": "http://prntscr.com/7qvloh",
+        "background": "http://i.imgur.com/avqFAwW.jpg",
         "playback": null,
         "admin": null,
         "ambassador": null,
